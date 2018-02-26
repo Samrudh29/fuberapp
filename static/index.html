@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Füber - on call taxi service</title>
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <script src="js/fuber.js"></script>
+</head>
+
+<body>
+  <!-- Header block -->
+  <div class="title">Füber
+    <span> - on call taxi service</span>
+  </div>
+
+  <div class="panelContainer">
+    <!-- Taxi list panel -->
+    <div class="panel">
+      <div class="panelheader">Taxis</div>
+      <div class="panelbody">
+        <table class="dataTable">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Number</th>
+              <th>Location</th>
+              <th>Pink</th>
+              <th>Reserved</th>
+            </tr>
+          </thead>
+          <tbody id="taxiList">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Add taxi panel -->
+    <div class="panel">
+      <div class="panelheader">Add/Edit Taxi
+      </div>
+      <div class="panelbody">
+        <table class="formTable">
+          <tr>
+            <td>
+              <label>Taxi number : </label>
+            </td>
+            <td>
+              <input type="text" id="taxiNumber" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Pink Taxi : </label>
+            </td>
+            <td>
+              <input type="checkbox" id="pink" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Logitude : </label>
+            </td>
+            <td>
+              <input type="text" id="longitude" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Latitude : </label>
+            </td>
+            <td>
+              <input type="text" id="latitude" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button onclick="addOrUpdateTaxi();">Add / Update Taxi</button>&nbsp;
+              <button onclick="resetTaxiForm();">Reset</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
